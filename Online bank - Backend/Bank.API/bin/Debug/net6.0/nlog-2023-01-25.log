@@ -1,0 +1,361 @@
+2023-01-25 22:39:33.0158|INFO|Bank.API.Program|Initializing application...
+2023-01-25 22:39:47.0702|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (92ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2023-01-25 22:39:47.4018|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (87ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [AccountInfoDB] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+END;
+2023-01-25 22:39:47.4476|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (42ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+DROP DATABASE [AccountInfoDB];
+2023-01-25 22:39:47.8033|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (261ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [AccountInfoDB];
+2023-01-25 22:39:47.8978|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (91ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [AccountInfoDB] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2023-01-25 22:39:48.0147|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2023-01-25 22:39:48.2734|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2023-01-25 22:39:48.2734|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2023-01-25 22:39:48.3681|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (64ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-01-25 22:39:48.3916|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-01-25 22:39:48.4993|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20230112122455_AccountInfoDBInitialMigration'.
+2023-01-25 22:39:48.7150|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Accounts] (
+    [Id] int NOT NULL IDENTITY,
+    [Owner] nvarchar(50) NOT NULL,
+    [Sum] real NOT NULL,
+    CONSTRAINT [PK_Accounts] PRIMARY KEY ([Id])
+);
+2023-01-25 22:39:48.7236|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Deposits] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(50) NOT NULL,
+    [Period] int NOT NULL,
+    [DepositSum] real NOT NULL,
+    [AccountId] int NOT NULL,
+    CONSTRAINT [PK_Deposits] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Deposits_Accounts_AccountId] FOREIGN KEY ([AccountId]) REFERENCES [Accounts] ([Id]) ON DELETE CASCADE
+);
+2023-01-25 22:39:48.7777|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (51ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Owner', N'Sum') AND [object_id] = OBJECT_ID(N'[Accounts]'))
+    SET IDENTITY_INSERT [Accounts] ON;
+INSERT INTO [Accounts] ([Id], [Owner], [Sum])
+VALUES (1, N'Gabor Andreea', CAST(2500 AS real)),
+(2, N'Pavel Carmen', CAST(3200 AS real)),
+(3, N'Wolf Lorena', CAST(2800 AS real));
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Owner', N'Sum') AND [object_id] = OBJECT_ID(N'[Accounts]'))
+    SET IDENTITY_INSERT [Accounts] OFF;
+2023-01-25 22:39:48.8051|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccountId', N'DepositSum', N'Name', N'Period') AND [object_id] = OBJECT_ID(N'[Deposits]'))
+    SET IDENTITY_INSERT [Deposits] ON;
+INSERT INTO [Deposits] ([Id], [AccountId], [DepositSum], [Name], [Period])
+VALUES (1, 1, CAST(2000 AS real), N'Savings Deposit', 1),
+(2, 1, CAST(500 AS real), N'Fixed Deposit', 12),
+(3, 2, CAST(2200 AS real), N'Fixed Deposit', 6),
+(4, 2, CAST(1000 AS real), N'Recurring Deposit', 1),
+(5, 3, CAST(1200 AS real), N'Savings Deposit', 12),
+(6, 3, CAST(1600 AS real), N'Current Deposit', 6);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccountId', N'DepositSum', N'Name', N'Period') AND [object_id] = OBJECT_ID(N'[Deposits]'))
+    SET IDENTITY_INSERT [Deposits] OFF;
+2023-01-25 22:39:48.8051|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Deposits_AccountId] ON [Deposits] ([AccountId]);
+2023-01-25 22:39:48.8344|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230112122455_AccountInfoDBInitialMigration', N'7.0.1');
+2023-01-25 22:39:49.6436|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\z004pj3h\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-01-25 22:39:51.8787|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:57658/ - -
+2023-01-25 22:39:52.0860|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:57658/ - - - 404 0 - 194.5661ms
+2023-01-25 23:15:46.7621|INFO|Bank.API.Program|Initializing application...
+2023-01-25 23:15:56.4385|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (48ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2023-01-25 23:15:56.7644|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (98ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [AccountInfoDB] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+END;
+2023-01-25 23:15:56.8058|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+DROP DATABASE [AccountInfoDB];
+2023-01-25 23:15:57.2925|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (389ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [AccountInfoDB];
+2023-01-25 23:15:57.3965|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (101ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [AccountInfoDB] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2023-01-25 23:15:57.3965|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2023-01-25 23:15:57.5825|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2023-01-25 23:15:57.5825|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2023-01-25 23:15:57.6478|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (45ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-01-25 23:15:57.6675|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-01-25 23:15:57.7401|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20230112122455_AccountInfoDBInitialMigration'.
+2023-01-25 23:15:57.8813|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Accounts] (
+    [Id] int NOT NULL IDENTITY,
+    [Owner] nvarchar(50) NOT NULL,
+    [Sum] real NOT NULL,
+    CONSTRAINT [PK_Accounts] PRIMARY KEY ([Id])
+);
+2023-01-25 23:15:57.8813|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Deposits] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(50) NOT NULL,
+    [Period] int NOT NULL,
+    [DepositSum] real NOT NULL,
+    [AccountId] int NOT NULL,
+    CONSTRAINT [PK_Deposits] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Deposits_Accounts_AccountId] FOREIGN KEY ([AccountId]) REFERENCES [Accounts] ([Id]) ON DELETE CASCADE
+);
+2023-01-25 23:15:57.9334|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (42ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Owner', N'Sum') AND [object_id] = OBJECT_ID(N'[Accounts]'))
+    SET IDENTITY_INSERT [Accounts] ON;
+INSERT INTO [Accounts] ([Id], [Owner], [Sum])
+VALUES (1, N'Gabor Andreea', CAST(2500 AS real)),
+(2, N'Pavel Carmen', CAST(3200 AS real)),
+(3, N'Wolf Lorena', CAST(2800 AS real));
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Owner', N'Sum') AND [object_id] = OBJECT_ID(N'[Accounts]'))
+    SET IDENTITY_INSERT [Accounts] OFF;
+2023-01-25 23:15:57.9526|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccountId', N'DepositSum', N'Name', N'Period') AND [object_id] = OBJECT_ID(N'[Deposits]'))
+    SET IDENTITY_INSERT [Deposits] ON;
+INSERT INTO [Deposits] ([Id], [AccountId], [DepositSum], [Name], [Period])
+VALUES (1, 1, CAST(2000 AS real), N'Savings Deposit', 1),
+(2, 1, CAST(500 AS real), N'Fixed Deposit', 12),
+(3, 2, CAST(2200 AS real), N'Fixed Deposit', 6),
+(4, 2, CAST(1000 AS real), N'Recurring Deposit', 1),
+(5, 3, CAST(1200 AS real), N'Savings Deposit', 12),
+(6, 3, CAST(1600 AS real), N'Current Deposit', 6);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccountId', N'DepositSum', N'Name', N'Period') AND [object_id] = OBJECT_ID(N'[Deposits]'))
+    SET IDENTITY_INSERT [Deposits] OFF;
+2023-01-25 23:15:57.9595|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Deposits_AccountId] ON [Deposits] ([AccountId]);
+2023-01-25 23:15:57.9595|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230112122455_AccountInfoDBInitialMigration', N'7.0.1');
+2023-01-25 23:15:58.5055|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\z004pj3h\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-01-25 23:16:00.0129|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:57658/ - -
+2023-01-25 23:16:00.4710|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:57658/ - - - 404 0 - 425.0713ms
+2023-01-25 23:16:05.9303|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:57658/api/accounts application/json 78
+2023-01-25 23:16:05.9395|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Bank.API.Controllers.AccountsController.GetAccounts (Bank.API)'
+2023-01-25 23:16:05.9718|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAccounts", controller = "Accounts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAccounts() on controller Bank.API.Controllers.AccountsController (Bank.API).
+2023-01-25 23:16:06.8865|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Owner], [a].[Sum]
+FROM [Accounts] AS [a]
+ORDER BY [a].[Owner]
+2023-01-25 23:16:07.0136|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Bank.API.Services.Models.AccountWithoutDepositsDTO, Bank.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-25 23:16:07.2350|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Bank.API.Controllers.AccountsController.GetAccounts (Bank.API) in 1242.3911ms
+2023-01-25 23:16:07.2383|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Bank.API.Controllers.AccountsController.GetAccounts (Bank.API)'
+2023-01-25 23:16:07.2695|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:57658/api/accounts application/json 78 - 200 136 application/json;+charset=utf-8 1339.7625ms
+2023-01-25 23:50:28.7379|INFO|Bank.API.Program|Initializing application...
+2023-01-25 23:50:35.6239|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (49ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2023-01-25 23:50:35.7627|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [AccountInfoDB] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+END;
+2023-01-25 23:50:35.7934|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (27ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+DROP DATABASE [AccountInfoDB];
+2023-01-25 23:50:36.8106|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (926ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [AccountInfoDB];
+2023-01-25 23:50:36.9098|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (96ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [AccountInfoDB] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2023-01-25 23:50:36.9207|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2023-01-25 23:50:37.0945|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2023-01-25 23:50:37.0989|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2023-01-25 23:50:37.1560|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (42ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-01-25 23:50:37.1753|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-01-25 23:50:37.2297|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20230112122455_AccountInfoDBInitialMigration'.
+2023-01-25 23:50:37.3714|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Accounts] (
+    [Id] int NOT NULL IDENTITY,
+    [Owner] nvarchar(50) NOT NULL,
+    [Sum] real NOT NULL,
+    CONSTRAINT [PK_Accounts] PRIMARY KEY ([Id])
+);
+2023-01-25 23:50:37.3811|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Deposits] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(50) NOT NULL,
+    [Period] int NOT NULL,
+    [DepositSum] real NOT NULL,
+    [AccountId] int NOT NULL,
+    CONSTRAINT [PK_Deposits] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Deposits_Accounts_AccountId] FOREIGN KEY ([AccountId]) REFERENCES [Accounts] ([Id]) ON DELETE CASCADE
+);
+2023-01-25 23:50:37.4808|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (97ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Owner', N'Sum') AND [object_id] = OBJECT_ID(N'[Accounts]'))
+    SET IDENTITY_INSERT [Accounts] ON;
+INSERT INTO [Accounts] ([Id], [Owner], [Sum])
+VALUES (1, N'Gabor Andreea', CAST(2500 AS real)),
+(2, N'Pavel Carmen', CAST(3200 AS real)),
+(3, N'Wolf Lorena', CAST(2800 AS real));
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Owner', N'Sum') AND [object_id] = OBJECT_ID(N'[Accounts]'))
+    SET IDENTITY_INSERT [Accounts] OFF;
+2023-01-25 23:50:37.5017|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccountId', N'DepositSum', N'Name', N'Period') AND [object_id] = OBJECT_ID(N'[Deposits]'))
+    SET IDENTITY_INSERT [Deposits] ON;
+INSERT INTO [Deposits] ([Id], [AccountId], [DepositSum], [Name], [Period])
+VALUES (1, 1, CAST(2000 AS real), N'Savings Deposit', 1),
+(2, 1, CAST(500 AS real), N'Fixed Deposit', 12),
+(3, 2, CAST(2200 AS real), N'Fixed Deposit', 6),
+(4, 2, CAST(1000 AS real), N'Recurring Deposit', 1),
+(5, 3, CAST(1200 AS real), N'Savings Deposit', 12),
+(6, 3, CAST(1600 AS real), N'Current Deposit', 6);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccountId', N'DepositSum', N'Name', N'Period') AND [object_id] = OBJECT_ID(N'[Deposits]'))
+    SET IDENTITY_INSERT [Deposits] OFF;
+2023-01-25 23:50:37.5086|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Deposits_AccountId] ON [Deposits] ([AccountId]);
+2023-01-25 23:50:37.5086|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230112122455_AccountInfoDBInitialMigration', N'7.0.1');
+2023-01-25 23:50:37.7750|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\z004pj3h\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-01-25 23:50:39.0067|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:57658/ - -
+2023-01-25 23:50:39.1548|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:57658/ - - - 404 0 - 150.6875ms
+2023-01-25 23:50:56.1386|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:57658/ - -
+2023-01-25 23:50:56.1476|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:57658/ - - - 404 0 - 6.1891ms
+2023-01-25 23:52:58.9864|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:57658/api/accounts - -
+2023-01-25 23:52:59.0133|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request.
+2023-01-25 23:52:59.0661|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Bank.API.Controllers.AccountsController.GetAccounts (Bank.API)'
+2023-01-25 23:52:59.1174|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAccounts", controller = "Accounts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAccounts() on controller Bank.API.Controllers.AccountsController (Bank.API).
+2023-01-25 23:52:59.6513|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:57658/api/accounts - -
+2023-01-25 23:52:59.6747|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request.
+2023-01-25 23:52:59.6843|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Bank.API.Controllers.AccountsController.GetAccounts (Bank.API)'
+2023-01-25 23:52:59.6931|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAccounts", controller = "Accounts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAccounts() on controller Bank.API.Controllers.AccountsController (Bank.API).
+2023-01-25 23:53:00.9812|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Owner], [a].[Sum]
+FROM [Accounts] AS [a]
+ORDER BY [a].[Owner]
+2023-01-25 23:53:00.9899|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Owner], [a].[Sum]
+FROM [Accounts] AS [a]
+ORDER BY [a].[Owner]
+2023-01-25 23:53:01.1436|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Bank.API.Services.Models.AccountWithoutDepositsDTO, Bank.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-25 23:53:01.1436|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Bank.API.Services.Models.AccountWithoutDepositsDTO, Bank.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-25 23:53:01.4204|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Bank.API.Controllers.AccountsController.GetAccounts (Bank.API) in 1690.6998ms
+2023-01-25 23:53:01.4204|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Bank.API.Controllers.AccountsController.GetAccounts (Bank.API) in 2265.9871ms
+2023-01-25 23:53:01.4324|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Bank.API.Controllers.AccountsController.GetAccounts (Bank.API)'
+2023-01-25 23:53:01.4324|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Bank.API.Controllers.AccountsController.GetAccounts (Bank.API)'
+2023-01-25 23:53:01.4724|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:57658/api/accounts - - - 200 136 application/json;+charset=utf-8 2483.7834ms
+2023-01-25 23:53:01.4763|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:57658/api/accounts - - - 200 136 application/json;+charset=utf-8 1840.4060ms
+2023-01-25 23:54:09.2226|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:57658/api/accounts - -
+2023-01-25 23:54:09.2226|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request.
+2023-01-25 23:54:09.2463|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Bank.API.Controllers.AccountsController.GetAccounts (Bank.API)'
+2023-01-25 23:54:09.2463|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAccounts", controller = "Accounts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAccounts() on controller Bank.API.Controllers.AccountsController (Bank.API).
+2023-01-25 23:54:09.3227|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Owner], [a].[Sum]
+FROM [Accounts] AS [a]
+ORDER BY [a].[Owner]
+2023-01-25 23:54:09.3227|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Bank.API.Services.Models.AccountWithoutDepositsDTO, Bank.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-25 23:54:09.3227|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Bank.API.Controllers.AccountsController.GetAccounts (Bank.API) in 75.1734ms
+2023-01-25 23:54:09.3353|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Bank.API.Controllers.AccountsController.GetAccounts (Bank.API)'
+2023-01-25 23:54:09.3353|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:57658/api/accounts - - - 200 136 application/json;+charset=utf-8 120.0957ms
+2023-01-25 23:54:09.4814|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:57658/api/accounts - -
+2023-01-25 23:54:09.4945|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request.
+2023-01-25 23:54:09.4945|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Bank.API.Controllers.AccountsController.GetAccounts (Bank.API)'
+2023-01-25 23:54:09.5083|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAccounts", controller = "Accounts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAccounts() on controller Bank.API.Controllers.AccountsController (Bank.API).
+2023-01-25 23:54:09.5083|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Owner], [a].[Sum]
+FROM [Accounts] AS [a]
+ORDER BY [a].[Owner]
+2023-01-25 23:54:09.5218|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Bank.API.Services.Models.AccountWithoutDepositsDTO, Bank.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-25 23:54:09.5218|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Bank.API.Controllers.AccountsController.GetAccounts (Bank.API) in 13.6826ms
+2023-01-25 23:54:09.5218|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Bank.API.Controllers.AccountsController.GetAccounts (Bank.API)'
+2023-01-25 23:54:09.5218|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:57658/api/accounts - - - 200 136 application/json;+charset=utf-8 52.0689ms
+2023-01-25 23:56:21.9030|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:57658/api/accounts - -
+2023-01-25 23:56:21.9030|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request.
+2023-01-25 23:56:21.9138|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Bank.API.Controllers.AccountsController.GetAccounts (Bank.API)'
+2023-01-25 23:56:21.9138|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAccounts", controller = "Accounts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAccounts() on controller Bank.API.Controllers.AccountsController (Bank.API).
+2023-01-25 23:56:21.9302|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Owner], [a].[Sum]
+FROM [Accounts] AS [a]
+ORDER BY [a].[Owner]
+2023-01-25 23:56:21.9302|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Bank.API.Services.Models.AccountWithoutDepositsDTO, Bank.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-25 23:56:21.9516|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Bank.API.Controllers.AccountsController.GetAccounts (Bank.API) in 14.1224ms
+2023-01-25 23:56:21.9691|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Bank.API.Controllers.AccountsController.GetAccounts (Bank.API)'
+2023-01-25 23:56:22.0083|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:57658/api/accounts - - - 200 136 application/json;+charset=utf-8 75.3935ms
+2023-01-25 23:56:26.2591|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:57658/api/accounts - -
+2023-01-25 23:56:26.2591|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request.
+2023-01-25 23:56:26.2744|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Bank.API.Controllers.AccountsController.GetAccounts (Bank.API)'
+2023-01-25 23:56:26.2744|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAccounts", controller = "Accounts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAccounts() on controller Bank.API.Controllers.AccountsController (Bank.API).
+2023-01-25 23:56:26.2949|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Owner], [a].[Sum]
+FROM [Accounts] AS [a]
+ORDER BY [a].[Owner]
+2023-01-25 23:56:26.3102|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Bank.API.Services.Models.AccountWithoutDepositsDTO, Bank.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-25 23:56:26.3102|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Bank.API.Controllers.AccountsController.GetAccounts (Bank.API) in 29.6131ms
+2023-01-25 23:56:26.3189|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Bank.API.Controllers.AccountsController.GetAccounts (Bank.API)'
+2023-01-25 23:56:26.3189|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:57658/api/accounts - - - 200 136 application/json;+charset=utf-8 67.2266ms
+2023-01-25 23:56:30.3610|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:57658/api/accounts - -
+2023-01-25 23:56:30.3664|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request.
+2023-01-25 23:56:30.3664|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Bank.API.Controllers.AccountsController.GetAccounts (Bank.API)'
+2023-01-25 23:56:30.3664|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAccounts", controller = "Accounts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAccounts() on controller Bank.API.Controllers.AccountsController (Bank.API).
+2023-01-25 23:56:30.3827|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Owner], [a].[Sum]
+FROM [Accounts] AS [a]
+ORDER BY [a].[Owner]
+2023-01-25 23:56:30.3827|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Bank.API.Services.Models.AccountWithoutDepositsDTO, Bank.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-25 23:56:30.3977|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Bank.API.Controllers.AccountsController.GetAccounts (Bank.API) in 10.3918ms
+2023-01-25 23:56:30.3977|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Bank.API.Controllers.AccountsController.GetAccounts (Bank.API)'
+2023-01-25 23:56:30.4149|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:57658/api/accounts - - - 200 136 application/json;+charset=utf-8 58.3027ms
+2023-01-25 23:59:29.5921|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:57658/api/accounts - -
+2023-01-25 23:59:29.6076|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request.
+2023-01-25 23:59:29.6076|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Bank.API.Controllers.AccountsController.GetAccounts (Bank.API)'
+2023-01-25 23:59:29.6159|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAccounts", controller = "Accounts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAccounts() on controller Bank.API.Controllers.AccountsController (Bank.API).
+2023-01-25 23:59:29.6159|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Owner], [a].[Sum]
+FROM [Accounts] AS [a]
+ORDER BY [a].[Owner]
+2023-01-25 23:59:29.6159|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Bank.API.Services.Models.AccountWithoutDepositsDTO, Bank.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-25 23:59:29.6315|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Bank.API.Controllers.AccountsController.GetAccounts (Bank.API) in 11.6808ms
+2023-01-25 23:59:29.6315|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Bank.API.Controllers.AccountsController.GetAccounts (Bank.API)'
+2023-01-25 23:59:29.6315|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:57658/api/accounts - - - 200 136 application/json;+charset=utf-8 48.2182ms
+2023-01-25 23:59:29.8832|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:57658/api/accounts - -
+2023-01-25 23:59:29.8965|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request.
+2023-01-25 23:59:29.8965|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Bank.API.Controllers.AccountsController.GetAccounts (Bank.API)'
+2023-01-25 23:59:29.8965|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAccounts", controller = "Accounts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAccounts() on controller Bank.API.Controllers.AccountsController (Bank.API).
+2023-01-25 23:59:29.9113|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[Owner], [a].[Sum]
+FROM [Accounts] AS [a]
+ORDER BY [a].[Owner]
+2023-01-25 23:59:29.9113|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Bank.API.Services.Models.AccountWithoutDepositsDTO, Bank.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-25 23:59:29.9113|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Bank.API.Controllers.AccountsController.GetAccounts (Bank.API) in 8.4583ms
+2023-01-25 23:59:29.9113|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Bank.API.Controllers.AccountsController.GetAccounts (Bank.API)'
+2023-01-25 23:59:29.9291|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:57658/api/accounts - - - 200 136 application/json;+charset=utf-8 47.5687ms

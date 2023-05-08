@@ -1,0 +1,230 @@
+D:\Proiect sper sa mearga\Bank\Bank.API\bin\Debug\net6.0\appsettings.Development.json
+D:\Proiect sper sa mearga\Bank\Bank.API\bin\Debug\net6.0\appsettings.json
+D:\Proiect sper sa mearga\Bank\Bank.API\bin\Debug\net6.0\Bank.API.staticwebassets.runtime.json
+D:\Proiect sper sa mearga\Bank\Bank.API\bin\Debug\net6.0\Bank.API.exe
+D:\Proiect sper sa mearga\Bank\Bank.API\bin\Debug\net6.0\Bank.API.deps.json
+D:\Proiect sper sa mearga\Bank\Bank.API\bin\Debug\net6.0\Bank.API.runtimeconfig.json
+D:\Proiect sper sa mearga\Bank\Bank.API\bin\Debug\net6.0\Bank.API.dll
+D:\Proiect sper sa mearga\Bank\Bank.API\bin\Debug\net6.0\Bank.API.pdb
+D:\Proiect sper sa mearga\Bank\Bank.API\obj\Debug\net6.0\Bank.API.csproj.AssemblyReference.cache
+D:\Proiect sper sa mearga\Bank\Bank.API\obj\Debug\net6.0\Bank.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proiect sper sa mearga\Bank\Bank.API\obj\Debug\net6.0\Bank.API.AssemblyInfoInputs.cache
+D:\Proiect sper sa mearga\Bank\Bank.API\obj\Debug\net6.0\Bank.API.AssemblyInfo.cs
+D:\Proiect sper sa mearga\Bank\Bank.API\obj\Debug\net6.0\Bank.API.csproj.CoreCompileInputs.cache
+D:\Proiect sper sa mearga\Bank\Bank.API\obj\Debug\net6.0\Bank.API.MvcApplicationPartsAssemblyInfo.cache
+D:\Proiect sper sa mearga\Bank\Bank.API\obj\Debug\net6.0\Bank.API.RazorAssemblyInfo.cache
+D:\Proiect sper sa mearga\Bank\Bank.API\obj\Debug\net6.0\Bank.API.RazorAssemblyInfo.cs
+D:\Proiect sper sa mearga\Bank\Bank.API\obj\Debug\net6.0\staticwebassets\msbuild.Bank.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Proiect sper sa mearga\Bank\Bank.API\obj\Debug\net6.0\staticwebassets\msbuild.build.Bank.API.props
+D:\Proiect sper sa mearga\Bank\Bank.API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Bank.API.props
+D:\Proiect sper sa mearga\Bank\Bank.API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Bank.API.props
+D:\Proiect sper sa mearga\Bank\Bank.API\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Proiect sper sa mearga\Bank\Bank.API\obj\Debug\net6.0\staticwebassets.build.json
+D:\Proiect sper sa mearga\Bank\Bank.API\obj\Debug\net6.0\staticwebassets.development.json
+D:\Proiect sper sa mearga\Bank\Bank.API\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+D:\Proiect sper sa mearga\Bank\Bank.API\obj\Debug\net6.0\scopedcss\bundle\Bank.API.styles.css
+D:\Proiect sper sa mearga\Bank\Bank.API\obj\Debug\net6.0\scopedcss\projectbundle\Bank.API.bundle.scp.css
+D:\Proiect sper sa mearga\Bank\Bank.API\obj\Debug\net6.0\Bank.API.dll
+D:\Proiect sper sa mearga\Bank\Bank.API\obj\Debug\net6.0\refint\Bank.API.dll
+D:\Proiect sper sa mearga\Bank\Bank.API\obj\Debug\net6.0\Bank.API.pdb
+D:\Proiect sper sa mearga\Bank\Bank.API\obj\Debug\net6.0\Bank.API.genruntimeconfig.cache
+D:\Proiect sper sa mearga\Bank\Bank.API\obj\Debug\net6.0\ref\Bank.API.dll
+D:\Proiect sper sa mearga\Bank\Bank.API\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Proiect sper sa mearga\Bank\Bank.API\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Proiect sper sa mearga\Bank\Bank.API\obj\Debug\net6.0\Bank.API.csproj.CopyComplete
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\appsettings.json
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Bank.API.staticwebassets.runtime.json
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Bank.API.exe
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Bank.API.deps.json
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Bank.API.runtimeconfig.json
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Bank.API.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Bank.API.pdb
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\Bank.API.csproj.AssemblyReference.cache
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\Bank.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\Bank.API.AssemblyInfoInputs.cache
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\Bank.API.AssemblyInfo.cs
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\Bank.API.csproj.CoreCompileInputs.cache
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\Bank.API.MvcApplicationPartsAssemblyInfo.cache
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\Bank.API.RazorAssemblyInfo.cache
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\Bank.API.RazorAssemblyInfo.cs
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\staticwebassets\msbuild.Bank.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\staticwebassets\msbuild.build.Bank.API.props
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Bank.API.props
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Bank.API.props
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\staticwebassets.build.json
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\staticwebassets.development.json
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\scopedcss\bundle\Bank.API.styles.css
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\scopedcss\projectbundle\Bank.API.bundle.scp.css
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\Bank.API.csproj.CopyComplete
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\Bank.API.dll
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\refint\Bank.API.dll
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\Bank.API.pdb
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\Bank.API.genruntimeconfig.cache
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\ref\Bank.API.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\nlog.config
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Azure.Core.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Azure.Identity.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\NLog.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\NLog.Extensions.Logging.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\NLog.Web.AspNetCore.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\System.Memory.Data.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Humanizer.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\System.CodeDom.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\System.Text.Json.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\AutoMapper.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Project-NoGit\Bank\Bank.API\bin\Debug\net6.0\appsettings.Production.json
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\Bank.API.Properties.Resources.resources
+D:\Project-NoGit\Bank\Bank.API\obj\Debug\net6.0\Bank.API.csproj.GenerateResource.cache
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\nlog.config
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\appsettings.json
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Bank.API.staticwebassets.runtime.json
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Bank.API.exe
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Bank.API.deps.json
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Bank.API.runtimeconfig.json
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Bank.API.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Bank.API.pdb
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\AutoMapper.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Azure.Core.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Azure.Identity.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Humanizer.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\NLog.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\NLog.Extensions.Logging.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\NLog.Web.AspNetCore.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\System.CodeDom.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\System.Memory.Data.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\System.Text.Json.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\internship-dynamics-2022\Bank\Bank.API\obj\Debug\net6.0\Bank.API.csproj.AssemblyReference.cache
+D:\internship-dynamics-2022\Bank\Bank.API\obj\Debug\net6.0\Bank.API.Properties.Resources.resources
+D:\internship-dynamics-2022\Bank\Bank.API\obj\Debug\net6.0\Bank.API.csproj.GenerateResource.cache
+D:\internship-dynamics-2022\Bank\Bank.API\obj\Debug\net6.0\Bank.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\internship-dynamics-2022\Bank\Bank.API\obj\Debug\net6.0\Bank.API.AssemblyInfoInputs.cache
+D:\internship-dynamics-2022\Bank\Bank.API\obj\Debug\net6.0\Bank.API.AssemblyInfo.cs
+D:\internship-dynamics-2022\Bank\Bank.API\obj\Debug\net6.0\Bank.API.csproj.CoreCompileInputs.cache
+D:\internship-dynamics-2022\Bank\Bank.API\obj\Debug\net6.0\Bank.API.MvcApplicationPartsAssemblyInfo.cache
+D:\internship-dynamics-2022\Bank\Bank.API\obj\Debug\net6.0\Bank.API.RazorAssemblyInfo.cache
+D:\internship-dynamics-2022\Bank\Bank.API\obj\Debug\net6.0\Bank.API.RazorAssemblyInfo.cs
+D:\internship-dynamics-2022\Bank\Bank.API\obj\Debug\net6.0\staticwebassets\msbuild.Bank.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\internship-dynamics-2022\Bank\Bank.API\obj\Debug\net6.0\staticwebassets\msbuild.build.Bank.API.props
+D:\internship-dynamics-2022\Bank\Bank.API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Bank.API.props
+D:\internship-dynamics-2022\Bank\Bank.API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Bank.API.props
+D:\internship-dynamics-2022\Bank\Bank.API\obj\Debug\net6.0\staticwebassets.pack.json
+D:\internship-dynamics-2022\Bank\Bank.API\obj\Debug\net6.0\staticwebassets.build.json
+D:\internship-dynamics-2022\Bank\Bank.API\obj\Debug\net6.0\staticwebassets.development.json
+D:\internship-dynamics-2022\Bank\Bank.API\obj\Debug\net6.0\scopedcss\bundle\Bank.API.styles.css
+D:\internship-dynamics-2022\Bank\Bank.API\obj\Debug\net6.0\Bank.API.csproj.CopyComplete
+D:\internship-dynamics-2022\Bank\Bank.API\obj\Debug\net6.0\Bank.API.dll
+D:\internship-dynamics-2022\Bank\Bank.API\obj\Debug\net6.0\refint\Bank.API.dll
+D:\internship-dynamics-2022\Bank\Bank.API\obj\Debug\net6.0\Bank.API.pdb
+D:\internship-dynamics-2022\Bank\Bank.API\obj\Debug\net6.0\Bank.API.genruntimeconfig.cache
+D:\internship-dynamics-2022\Bank\Bank.API\obj\Debug\net6.0\ref\Bank.API.dll
+D:\internship-dynamics-2022\Bank\Bank.API\bin\Debug\net6.0\BCrypt.Net.dll

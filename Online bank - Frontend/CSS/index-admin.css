@@ -1,0 +1,113 @@
+:root{
+    --dark-blue:#06141B;
+    --yellow:#E4AE36;
+    --blue:#7DBCC7;
+    --gray:#E4E2E8;
+    --red:#a40000;
+
+    --white:#fff;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Arima Mudurai", cursive;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    overflow: scroll;
+    background-color: var(--dark-blue);
+}
+
+.parent{
+    width:60%;
+    margin: 150px 50px;
+}
+
+.child-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    color: var(--gray);
+}
+
+.child-1 .button-add{
+    background-color: var(--yellow);
+    border-radius: 20px;
+    width: 150px;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.child-1 .button-add i{
+    margin-left: 10px;
+}
+
+.child-2 .accounts-table{
+    text-align: left;
+    color: var(--gray);
+}
+
+.child-2 .accounts-table th{
+    background-color: var(--blue);
+    color: var(--dark-blue);
+    font-size: 18px;
+}
+
+.child-2 table{
+    border: var(--gray) solid 2px;
+}
+
+.child-2 .accounts-table button{
+    border: none;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.child-2 .accounts-table .button-deposits{
+    background-color: #fffacd;
+    color: var(--dark-blue);
+}
+
+
+.child-2 .accounts-table .button-edit{
+    background-color: var(--gray);
+    color: var(--dark-blue);
+    margin:0px 10px;
+}
+
+.child-2 .accounts-table .button-delete{
+    background-color: var(--red);
+    color: var(--gray);
+}
+
+.child-3{
+    display: flex;
+    justify-content: right;
+}
+
+.child-3 button{
+    background-color: var(--yellow);
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.child-1 .no-data{
+    color: var(--red);
+    font-size:25px;
+    font-weight: 600;
+}

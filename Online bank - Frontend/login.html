@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Login</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    
+        <script
+          src="https://kit.fontawesome.com/dbed6b6114.js"
+          crossorigin="anonymous"
+        ></script>
+    
+        <link
+          href="https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Poiret+One&display=swap"
+          rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/login.css" />
+    </head>
+
+    <body>
+        <div class="parent">
+
+            <div class="child-1">
+
+                <div class="login-register">
+                    <form action="" id="login" class="login">
+                        <h2 class="title">Login</h2>
+
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="username-input" placeholder="Username" autocomplete="off">
+                        </div>
+
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password-input" placeholder="Password" autocomplete="off">
+                        </div>
+
+                        <div id="error" class="error"></div>
+                        <button type="submit" class="button-login-register" onclick="">Login</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="child-2">
+                <div class="child-2-content">
+                    <div class="content">
+                        <h3>New here?</h3>
+                        <p>Create now an account that gives you the opportunity to have the data of all your bank accounts and deposits organized in one place!</p>
+    
+                        <button class="btn-new button-login-register" onclick="registerButton()">Register</button>
+                    </div>
+    
+                    <img src="images/login.svg" class="image" alt="">
+                </div>
+    
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.0.0/crypto-js.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>    
+        <script src="JS/login.js"></script>
+    </body>
+</html>

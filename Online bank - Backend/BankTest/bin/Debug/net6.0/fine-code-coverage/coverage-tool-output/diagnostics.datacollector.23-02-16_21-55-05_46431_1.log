@@ -1,0 +1,896 @@
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:05.749, 15717152778773, datacollector.dll, Version: 17.4.0-release-20221019-01
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:05.757, 15717152865465, datacollector.dll, DataCollectorMain.Run: Starting data collector run with args: --port,55835,--parentprocessid,31860,--diag,D:\internship-dynamics-2022\Bank\BankTest\bin\Debug\net6.0\fine-code-coverage\coverage-tool-output\diagnostics.datacollector.23-02-16_21-55-05_46431_1.log,--tracelevel,4
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:05.757, 15717152867479, datacollector.dll, DataCollector: Monitoring parent process with id: '31860'
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:05.767, 15717152959327, datacollector.dll, Trying to connect to server on socket : 127.0.0.1:55835 
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:05.777, 15717153059853, datacollector.dll, SocketCommunicationManager : SetupClientAsync : Attempting to connect to the server.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:05.793, 15717153218454, datacollector.dll, Connected to the server successfully 
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:05.793, 15717153219972, datacollector.dll, Using the buffer size of 16384 bytes
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:05.951, 15717154803479, datacollector.dll, DataCollector: Start Request Processing.
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:05.951, 15717154806211, datacollector.dll, SocketCommunicationManager.WaitForServerConnection took: 0 ms, with 90000 ms timeout, and finished with True.
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:05.952, 15717154810055, datacollector.dll, DataCollectionRequestHandler.ProcessRequests: Datacollector received message: (DataCollection.BeforeTestRunStart) -> {"MessageType":"DataCollection.BeforeTestRunStart","Payload":{"SettingsXml":"<RunSettings><RunConfiguration><ResultsDirectory>D:\\internship-dynamics-2022\\Bank\\BankTest\\bin\\Debug\\net6.0\\fine-code-coverage\\coverage-tool-output</ResultsDirectory><TargetPlatform>X64</TargetPlatform><TargetFrameworkVersion>.NETCoreApp,Version=v6.0</TargetFrameworkVersion><DesignMode>False</DesignMode><CollectSourceInformation>False</CollectSourceInformation><TestAdaptersPaths>C:\\Program Files\\dotnet\\sdk\\7.0.102\\Extensions</TestAdaptersPaths></RunConfiguration><LoggerRunSettings><Loggers><Logger friendlyName=\"blame\" enabled=\"True\" /><Logger friendlyName=\"Console\" uri=\"logger://microsoft/TestPlatform/ConsoleLogger/v1\" assemblyQualifiedName=\"Microsoft.VisualStudio.TestPlatform.CommandLine.Internal.ConsoleLogger, vstest.console, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a\" codeBase=\"C:\\Program Files\\dotnet\\sdk\\7.0.102\\vstest.console.dll\" enabled=\"True\" /></Loggers></LoggerRunSettings><DataCollectionRunSettings><DataCollectors><DataCollector friendlyName=\"blame\" enabled=\"True\"><Configuration><ResultsDirectory>D:\\internship-dynamics-2022\\Bank\\BankTest\\bin\\Debug\\net6.0\\fine-code-coverage\\coverage-tool-output</ResultsDirectory></Configuration></DataCollector></DataCollectors></DataCollectionRunSettings></RunSettings>","Sources":["D:\\internship-dynamics-2022\\Bank\\BankTest\\bin\\Debug\\net6.0\\fine-code-coverage\\build-output\\BankTest.dll"],"IsTelemetryOptedIn":false}}
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:06.026, 15717155548873, datacollector.dll, TestPluginCache: Update extensions started. Skip filter = False
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:06.027, 15717155567379, datacollector.dll, TestPluginCache: Using directories for assembly resolution 'C:\Program Files\dotnet\sdk\7.0.102\Extensions'.
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:06.028, 15717155569414, datacollector.dll, TestPluginCache: Updated the available extensions to 'C:\Program Files\dotnet\sdk\7.0.102\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll,C:\Program Files\dotnet\sdk\7.0.102\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll'.
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:06.043, 15717155723868, datacollector.dll, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies ends with: Collector.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.DataCollector.DataCollectorConfig TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.DataCollector
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:06.044, 15717155728884, datacollector.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: C:\Program Files\dotnet\sdk\7.0.102\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\7.0.102\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:06.044, 15717155730438, datacollector.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: 
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:06.044, 15717155731251, datacollector.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:06.045, 15717155743698, datacollector.dll, AssemblyResolver.ctor: Creating AssemblyResolver with searchDirectories C:\Program Files\dotnet\sdk\7.0.102\Extensions,C:\Program Files\dotnet\sdk\7.0.102
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:06.048, 15717155768755, datacollector.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:06.048, 15717155772304, datacollector.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: C:\Program Files\dotnet\sdk\7.0.102\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\7.0.102\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:06.048, 15717155773491, datacollector.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: 
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:06.048, 15717155774256, datacollector.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:06.048, 15717155775693, datacollector.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: C:\Program Files\dotnet\sdk\7.0.102\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\7.0.102\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:06.048, 15717155777792, datacollector.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\7.0.102\Extensions,C:\Program Files\dotnet\sdk\7.0.102
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:06.049, 15717155779000, datacollector.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\7.0.102\Extensions,C:\Program Files\dotnet\sdk\7.0.102
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:06.049, 15717155787018, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Resolving assembly.
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:06.050, 15717155788808, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Searching in: 'C:\Program Files\dotnet\sdk\7.0.102\Extensions'.
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:06.065, 15717155944181, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Loading assembly 'C:\Program Files\dotnet\sdk\7.0.102\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll'.
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:06.067, 15717155958688, datacollector.dll, AssemblyResolver.OnResolve: Resolved assembly: Microsoft.TestPlatform.Extensions.BlameDataCollector, from path: C:\Program Files\dotnet\sdk\7.0.102\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:06.068, 15717155975021, datacollector.dll, MetadataReaderExtensionsHelper: Discovering extensions inside assembly 'Microsoft.TestPlatform.Extensions.BlameDataCollector, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' file path 'C:\Program Files\dotnet\sdk\7.0.102\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll'
+TpTrace Error: 0 : 29016, 1, 2023/02/16, 21:55:06.072, 15717156017515, datacollector.dll, The type "Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector" defined in "Microsoft.TestPlatform.Extensions.BlameDataCollector.dll" does not have ExtensionUri attribute.
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:06.074, 15717156028943, datacollector.dll, GetTestExtensionFromType: Register extension with identifier data 'datacollector://microsoft/TestPlatform/Extensions/Blame/v1' and type 'Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector, Microsoft.TestPlatform.Extensions.BlameDataCollector, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' inside file 'C:\Program Files\dotnet\sdk\7.0.102\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll'
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:06.074, 15717156030601, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.EventLogCollector: Resolving assembly.
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:06.074, 15717156031224, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.EventLogCollector: Searching in: 'C:\Program Files\dotnet\sdk\7.0.102\Extensions'.
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:06.075, 15717156038597, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.EventLogCollector: Loading assembly 'C:\Program Files\dotnet\sdk\7.0.102\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll'.
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:06.076, 15717156052104, datacollector.dll, AssemblyResolver.OnResolve: Resolved assembly: Microsoft.TestPlatform.Extensions.EventLogCollector, from path: C:\Program Files\dotnet\sdk\7.0.102\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:06.076, 15717156054088, datacollector.dll, MetadataReaderExtensionsHelper: Discovering extensions inside assembly 'Microsoft.TestPlatform.Extensions.EventLogCollector, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' file path 'C:\Program Files\dotnet\sdk\7.0.102\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll'
+TpTrace Error: 0 : 29016, 1, 2023/02/16, 21:55:06.083, 15717156118973, datacollector.dll, The type "Microsoft.TestPlatform.Extensions.EventLogCollector.EventLogDataCollector" defined in "Microsoft.TestPlatform.Extensions.EventLogCollector.dll" does not have ExtensionUri attribute.
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:06.083, 15717156122358, datacollector.dll, GetTestExtensionFromType: Register extension with identifier data 'datacollector://microsoft/EventLog/2.0' and type 'Microsoft.TestPlatform.Extensions.EventLogCollector.EventLogDataCollector, Microsoft.TestPlatform.Extensions.EventLogCollector, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' inside file 'C:\Program Files\dotnet\sdk\7.0.102\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll'
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:06.084, 15717156128312, datacollector.dll, TestPluginCache: Discovered the extensions using extension path 'C:\Program Files\dotnet\sdk\7.0.102\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll,C:\Program Files\dotnet\sdk\7.0.102\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll'.
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:06.084, 15717156129605, datacollector.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:06.084, 15717156130797, datacollector.dll, TestPluginCache: Executors are ''.
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:06.084, 15717156133463, datacollector.dll, TestPluginCache: Executors2 are ''.
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:06.084, 15717156134701, datacollector.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:06.084, 15717156135387, datacollector.dll, TestPluginCache: Loggers are ''.
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:06.084, 15717156135992, datacollector.dll, TestPluginCache: TestHosts are ''.
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:06.085, 15717156138473, datacollector.dll, TestPluginCache: DataCollectors are 'datacollector://microsoft/TestPlatform/Extensions/Blame/v1,datacollector://microsoft/EventLog/2.0'.
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:06.087, 15717156159203, datacollector.dll, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:06.095, 15717156244705, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.SessionStart: Invoking callbacks was skipped because there are no subscribers.
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:06.096, 15717156253000, datacollector.dll, Listening on Endpoint : 127.0.0.1:55837
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:06.113, 15717156424059, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : DataCollection started.
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:06.144, 15717156733157, datacollector.dll, DataCollectionRequestHandler.ProcessRequests: Datacollector received message: (DataCollection.TestHostLaunched) -> {"MessageType":"DataCollection.TestHostLaunched","Payload":{"ProcessId":34452}}
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:06.146, 15717156756497, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestHostLaunched: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 8, 2023/02/16, 21:55:06.485, 15717160140373, datacollector.dll, Using the buffer size of 16384 bytes
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:06.485, 15717160140494, datacollector.dll, SocketCommunicationManager.WaitForClientConnection took: 381 ms, with 90000 ms timeout, and finished with True.
+TpTrace Information: 0 : 29016, 8, 2023/02/16, 21:55:06.485, 15717160141882, datacollector.dll, Accepted Client request and set the flag
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.105, 15717166339557, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.153, 15717166818314, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.153, 15717166821166, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.153, 15717166823625, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AccountNotNullTest - a39b2b90-d8cc-afc3-c7c5-ec571edcf966' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.195, 15717167240509, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.200, 15717167291747, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.200, 15717167294706, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.204, 15717167329559, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AccountNotNullTest - a39b2b90-d8cc-afc3-c7c5-ec571edcf966' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.214, 15717167431078, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.215, 15717167441240, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.215, 15717167442674, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.215, 15717167445013, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerTest - 672a2b22-6faf-00dd-7cf2-0e8a8aedcca3' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.217, 15717167463643, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.219, 15717167478790, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.219, 15717167480159, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.219, 15717167482495, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerTest - 672a2b22-6faf-00dd-7cf2-0e8a8aedcca3' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.220, 15717167491204, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.221, 15717167498697, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.221, 15717167499761, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.221, 15717167501097, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SumTest - 35835b71-cde8-3678-2fb5-a6786839872f' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.223, 15717167525274, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.224, 15717167532682, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.224, 15717167533827, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.224, 15717167535388, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SumTest - 35835b71-cde8-3678-2fb5-a6786839872f' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.225, 15717167543254, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.226, 15717167550638, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.226, 15717167551939, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.226, 15717167553573, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerNullValidTest - dab29e5b-f00d-e9cb-5547-3a3147266cbd' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.227, 15717167566277, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.228, 15717167576480, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.228, 15717167577899, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.229, 15717167579900, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerNullValidTest - dab29e5b-f00d-e9cb-5547-3a3147266cbd' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.230, 15717167588562, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.230, 15717167596931, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.231, 15717167598332, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.231, 15717167600152, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerLengthValidTest - 5ba3764d-1d4a-466f-ee23-0ffab1571c94' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.232, 15717167612259, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.235, 15717167641217, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.235, 15717167642840, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.235, 15717167645009, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerLengthValidTest - 5ba3764d-1d4a-466f-ee23-0ffab1571c94' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.236, 15717167653418, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.239, 15717167681585, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.239, 15717167683156, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.239, 15717167685069, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SumLowerValidTest - c536a442-a80b-344a-0bd2-38753f32678e' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.240, 15717167696550, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.243, 15717167725375, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.243, 15717167727043, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.244, 15717167729466, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SumLowerValidTest - c536a442-a80b-344a-0bd2-38753f32678e' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.251, 15717167802973, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.252, 15717167811265, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.252, 15717167812255, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.252, 15717167813703, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UserIdTest - be851f64-1804-133d-10f1-a97a53fb53e4' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.254, 15717167830140, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.254, 15717167837898, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.255, 15717167838739, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.255, 15717167840129, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UserIdTest - be851f64-1804-133d-10f1-a97a53fb53e4' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.255, 15717167847108, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.256, 15717167854853, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.256, 15717167855942, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.256, 15717167857313, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AccountNotNullTest - 7e37f918-b636-5e32-23e8-3b1f73c26392' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.258, 15717167872141, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.259, 15717167880014, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.259, 15717167881176, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.259, 15717167883605, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AccountNotNullTest - 7e37f918-b636-5e32-23e8-3b1f73c26392' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.260, 15717167891321, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.261, 15717167899503, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.261, 15717167900958, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.261, 15717167902685, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IdTest - 13390761-a44d-79e1-714d-5af17c46d687' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.262, 15717167912828, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.263, 15717167920565, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.263, 15717167921450, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.263, 15717167922830, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IdTest - 13390761-a44d-79e1-714d-5af17c46d687' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.303, 15717168322701, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.306, 15717168348588, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.306, 15717168350250, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.306, 15717168352367, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerTest - 4d6edf87-39b2-cdf4-9908-ef59750c3480' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.308, 15717168371690, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.309, 15717168386032, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.309, 15717168387673, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.310, 15717168389963, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerTest - 4d6edf87-39b2-cdf4-9908-ef59750c3480' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.311, 15717168400971, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.312, 15717168413061, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.312, 15717168414668, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.313, 15717168422096, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SumTest - 54a96f7b-b46f-1571-c1e8-c1be2ba123d5' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.315, 15717168447043, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.317, 15717168460810, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.317, 15717168462403, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.317, 15717168464643, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SumTest - 54a96f7b-b46f-1571-c1e8-c1be2ba123d5' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.318, 15717168475695, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.320, 15717168488699, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.320, 15717168490341, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.320, 15717168492447, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'NumberOfDepositsTest - 0873d8ba-d0f7-8b08-48e5-e70744b69910' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.322, 15717168513516, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.324, 15717168529611, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.324, 15717168531201, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.324, 15717168533425, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'NumberOfDepositsTest - 0873d8ba-d0f7-8b08-48e5-e70744b69910' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.325, 15717168543946, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.326, 15717168558118, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.327, 15717168559756, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.327, 15717168561709, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UserIdTest - c088c035-2472-54de-c026-caceca42285f' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.328, 15717168577724, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.330, 15717168592948, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.330, 15717168594475, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.330, 15717168596828, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UserIdTest - c088c035-2472-54de-c026-caceca42285f' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.331, 15717168607257, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.333, 15717168620891, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.333, 15717168622415, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.333, 15717168624531, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AccountNotNullTest - 28f83416-4a7b-f005-95ac-a129bf90cb10' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.335, 15717168643235, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.336, 15717168656705, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.337, 15717168658340, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.337, 15717168660367, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AccountNotNullTest - 28f83416-4a7b-f005-95ac-a129bf90cb10' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.338, 15717168670826, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.339, 15717168683737, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.339, 15717168685807, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.339, 15717168687537, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerTest - a664adb0-f16e-a1a9-83ef-e53f37665a87' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.341, 15717168703551, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.343, 15717168723013, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.343, 15717168724700, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.343, 15717168726917, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerTest - a664adb0-f16e-a1a9-83ef-e53f37665a87' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.345, 15717168743983, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.347, 15717168758663, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.347, 15717168760297, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.347, 15717168762451, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SumTest - 41c65ba1-1517-1bc1-6823-4389cde12721' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.348, 15717168777566, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.350, 15717168793312, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.350, 15717168794842, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.350, 15717168796926, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SumTest - 41c65ba1-1517-1bc1-6823-4389cde12721' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.351, 15717168807573, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.352, 15717168815399, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.352, 15717168816358, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.352, 15717168817661, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerNullValidTest - adb5a5b9-621a-bb4b-1285-ed22ac46f073' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.354, 15717168830306, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.355, 15717168842768, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.355, 15717168844132, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.355, 15717168846350, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerNullValidTest - adb5a5b9-621a-bb4b-1285-ed22ac46f073' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.356, 15717168856430, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.358, 15717168877378, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.359, 15717168879141, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.359, 15717168881090, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerLengthValidTest - 946d4dca-37dd-de5b-494b-a027dde92b03' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.360, 15717168896792, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.362, 15717168914322, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.362, 15717168915926, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.363, 15717168918261, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerLengthValidTest - 946d4dca-37dd-de5b-494b-a027dde92b03' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.367, 15717168960207, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.368, 15717168976623, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.369, 15717168978129, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.369, 15717168980004, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SumLowerValidTest - f43dbb8f-e4da-7789-e0b6-2bcd3ce03b71' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.370, 15717168995317, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.372, 15717169009276, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.372, 15717169010766, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.372, 15717169013038, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SumLowerValidTest - f43dbb8f-e4da-7789-e0b6-2bcd3ce03b71' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.373, 15717169023984, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.374, 15717169037655, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.375, 15717169039146, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.375, 15717169041182, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UserIdTest - 468b75e7-0c88-37fa-1826-bad4a2887b8f' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.376, 15717169056945, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.378, 15717169069974, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.378, 15717169071579, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.378, 15717169074020, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UserIdTest - 468b75e7-0c88-37fa-1826-bad4a2887b8f' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.379, 15717169084709, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.381, 15717169099156, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.381, 15717169100911, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.381, 15717169102889, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AccountNotNullTest - 6ff2d47e-99ca-2c48-ff3b-d3a563f8822d' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.383, 15717169125182, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.385, 15717169142405, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.385, 15717169144055, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.385, 15717169146691, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AccountNotNullTest - 6ff2d47e-99ca-2c48-ff3b-d3a563f8822d' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.386, 15717169157898, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.389, 15717169179821, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.389, 15717169181568, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.389, 15717169183667, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IdTest - bac71ed6-9c3e-e710-d557-589f2ceb2a51' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.391, 15717169202048, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.392, 15717169216892, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.393, 15717169218565, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.393, 15717169220990, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IdTest - bac71ed6-9c3e-e710-d557-589f2ceb2a51' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.394, 15717169231589, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.399, 15717169285433, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.399, 15717169287243, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.400, 15717169289054, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerTest - aa247f2c-481b-88d9-0a93-db3dacb97cdc' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.401, 15717169304456, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.402, 15717169316244, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.402, 15717169317423, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.403, 15717169319112, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerTest - aa247f2c-481b-88d9-0a93-db3dacb97cdc' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.404, 15717169329215, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.405, 15717169340525, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.405, 15717169341850, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.405, 15717169343458, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SumTest - ded9cca9-8185-7862-9b43-5d4fb6acf73d' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.407, 15717169358174, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.408, 15717169369514, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.408, 15717169370755, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.408, 15717169372437, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SumTest - ded9cca9-8185-7862-9b43-5d4fb6acf73d' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.409, 15717169383611, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.410, 15717169394729, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.410, 15717169395884, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.410, 15717169397338, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UserIdTest - 3e276a95-7dc8-f38d-a105-40eec8e3fb22' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.412, 15717169411613, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.413, 15717169423783, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.413, 15717169425148, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.413, 15717169427048, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UserIdTest - 3e276a95-7dc8-f38d-a105-40eec8e3fb22' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.414, 15717169436795, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.416, 15717169448015, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.416, 15717169449176, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.416, 15717169451136, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositNotNullTest - 33dc8acb-aab1-fda7-69a8-2f98e00a8f6f' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.418, 15717169469826, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.419, 15717169481548, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.419, 15717169483125, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.419, 15717169485141, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositNotNullTest - 33dc8acb-aab1-fda7-69a8-2f98e00a8f6f' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.420, 15717169496494, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.422, 15717169510293, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.422, 15717169512146, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.422, 15717169514336, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'NameTest - 61e27ddb-7b52-f6e7-641a-0474e7f8aa1a' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.424, 15717169529465, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.425, 15717169542892, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.425, 15717169544386, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.425, 15717169546806, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'NameTest - 61e27ddb-7b52-f6e7-641a-0474e7f8aa1a' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.428, 15717169575922, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.429, 15717169587778, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.430, 15717169589251, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.430, 15717169591228, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PeriodTest - ef148c13-0777-1c04-5544-97dbba02c760' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.431, 15717169606270, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.432, 15717169617584, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.433, 15717169618605, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.433, 15717169620636, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PeriodTest - ef148c13-0777-1c04-5544-97dbba02c760' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.434, 15717169630174, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.435, 15717169641614, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.435, 15717169643103, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.435, 15717169644740, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositSumTest - 258b162e-a31e-1994-7093-5e001f1df03c' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.437, 15717169658713, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.438, 15717169670492, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.438, 15717169671669, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.438, 15717169673401, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositSumTest - 258b162e-a31e-1994-7093-5e001f1df03c' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.439, 15717169682928, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.440, 15717169693889, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.440, 15717169695053, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.440, 15717169696678, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'NameNullValidTest - e0f02b6a-9b23-3f55-3706-e51e244759fd' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.442, 15717169710410, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.443, 15717169724669, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.443, 15717169726161, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.444, 15717169728252, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'NameNullValidTest - e0f02b6a-9b23-3f55-3706-e51e244759fd' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.445, 15717169738672, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.446, 15717169751289, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.446, 15717169752873, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.446, 15717169755047, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'NameLengthValidTest - 21a9e958-fbd7-fc79-153c-0fe978b3d9ab' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.448, 15717169769463, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.448, 15717169777839, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.449, 15717169779327, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.449, 15717169781349, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'NameLengthValidTest - 21a9e958-fbd7-fc79-153c-0fe978b3d9ab' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.450, 15717169792627, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.451, 15717169802731, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.451, 15717169804054, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.451, 15717169805659, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PeriodValidTest - b5911441-d381-e74a-4e29-9dc23175d9d6' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.453, 15717169820291, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.454, 15717169829212, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.454, 15717169830434, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.454, 15717169832570, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PeriodValidTest - b5911441-d381-e74a-4e29-9dc23175d9d6' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.455, 15717169842887, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.456, 15717169851272, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.456, 15717169852950, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.456, 15717169854459, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SumLowerValidTest - 04853797-2979-12dc-31bf-d3500cb5b876' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.458, 15717169868814, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.458, 15717169877946, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.459, 15717169879214, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.459, 15717169880901, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SumLowerValidTest - 04853797-2979-12dc-31bf-d3500cb5b876' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.460, 15717169893145, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.461, 15717169901977, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.461, 15717169903144, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.461, 15717169904704, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositNotNullTest - cd9e4897-8af5-2eea-b194-8b4d2e8a18a6' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.463, 15717169920623, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.464, 15717169929710, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.464, 15717169930782, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.464, 15717169932440, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositNotNullTest - cd9e4897-8af5-2eea-b194-8b4d2e8a18a6' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.465, 15717169943038, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.466, 15717169951445, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.466, 15717169952714, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.466, 15717169954512, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IdTest - f152f88a-42f3-10e3-08bd-d28daf83c7d9' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.468, 15717169969637, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.469, 15717169980288, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.469, 15717169981675, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.469, 15717169983632, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IdTest - f152f88a-42f3-10e3-08bd-d28daf83c7d9' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.470, 15717169995784, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.471, 15717170006524, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.471, 15717170007759, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.472, 15717170009340, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'NameTest - 7363eccb-5da6-c474-fbaa-1817d0e11425' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.473, 15717170023496, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.474, 15717170036956, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.475, 15717170038403, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.475, 15717170040201, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'NameTest - 7363eccb-5da6-c474-fbaa-1817d0e11425' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.478, 15717170069226, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.478, 15717170077570, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.479, 15717170078936, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.479, 15717170080716, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PeriodTest - 30a60976-1bc3-9d0f-00cf-8bcdfa214bfb' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.482, 15717170117534, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.483, 15717170126538, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.483, 15717170127569, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.484, 15717170129286, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PeriodTest - 30a60976-1bc3-9d0f-00cf-8bcdfa214bfb' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.485, 15717170139712, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.485, 15717170147536, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.486, 15717170148760, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.486, 15717170150442, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositSumTest - b5f639e4-16b7-4e1e-88c1-72a9e0a96cab' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.487, 15717170164173, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.488, 15717170172115, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.488, 15717170173350, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.488, 15717170175077, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositSumTest - b5f639e4-16b7-4e1e-88c1-72a9e0a96cab' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.489, 15717170184235, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.490, 15717170191786, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.490, 15717170192853, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.490, 15717170194366, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositNotNullTest - 2ce117e6-8aec-e42a-b800-9e6e31034932' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.492, 15717170210659, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.493, 15717170218400, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.493, 15717170219422, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.493, 15717170221134, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositNotNullTest - 2ce117e6-8aec-e42a-b800-9e6e31034932' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.494, 15717170230840, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.495, 15717170238303, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.495, 15717170239315, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.495, 15717170240739, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'NameTest - 947cdbaa-e793-bd27-45b1-00de2aac3f8f' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.496, 15717170253739, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.497, 15717170262448, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.497, 15717170263474, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.497, 15717170265044, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'NameTest - 947cdbaa-e793-bd27-45b1-00de2aac3f8f' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.498, 15717170275352, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.499, 15717170282766, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.499, 15717170283786, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.499, 15717170285215, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PeriodTest - 3f0b32c1-f9cb-9e3b-8e16-220c6d9ff7f3' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.501, 15717170299293, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.502, 15717170309099, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.502, 15717170310428, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.502, 15717170312331, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PeriodTest - 3f0b32c1-f9cb-9e3b-8e16-220c6d9ff7f3' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.503, 15717170322319, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.504, 15717170331165, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.504, 15717170332347, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.504, 15717170333979, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositSumTest - 561fc311-bd9e-39ae-7f76-ee0232880189' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.506, 15717170348815, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.506, 15717170357643, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.507, 15717170358863, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.507, 15717170360678, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositSumTest - 561fc311-bd9e-39ae-7f76-ee0232880189' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.508, 15717170371342, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.509, 15717170380094, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.509, 15717170381402, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.509, 15717170383029, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'NameNullValidTest - 9ede09f6-7846-099e-0183-9be8e75806a9' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.510, 15717170395993, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.511, 15717170404269, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.511, 15717170405294, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.511, 15717170407057, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'NameNullValidTest - 9ede09f6-7846-099e-0183-9be8e75806a9' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.512, 15717170417014, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.513, 15717170426234, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.513, 15717170427506, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.514, 15717170429181, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'NameLengthValidTest - 5e80e37d-6c46-4936-492d-248910f10cc3' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.515, 15717170442882, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.516, 15717170451671, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.516, 15717170452843, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.516, 15717170454953, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'NameLengthValidTest - 5e80e37d-6c46-4936-492d-248910f10cc3' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.517, 15717170465499, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.518, 15717170475901, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.518, 15717170477272, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.519, 15717170479112, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PeriodValidTest - 6b69d1fd-7fff-3c49-f92f-0a08642161dc' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.520, 15717170493219, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.521, 15717170502207, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.521, 15717170503588, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.521, 15717170505535, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PeriodValidTest - 6b69d1fd-7fff-3c49-f92f-0a08642161dc' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.524, 15717170532152, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.525, 15717170539780, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.525, 15717170540960, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.525, 15717170542498, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SumLowerValidTest - 82671758-667d-2612-e5ec-d5495b120173' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.526, 15717170556617, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.527, 15717170564360, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.527, 15717170565340, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.527, 15717170567001, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SumLowerValidTest - 82671758-667d-2612-e5ec-d5495b120173' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.528, 15717170576359, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.529, 15717170583212, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.529, 15717170584179, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.529, 15717170585486, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AccountNotNullTest - 872bb7f0-b17e-e6a8-eeeb-d3e982436ce9' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.531, 15717170606285, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.532, 15717170613318, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.532, 15717170614289, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.532, 15717170615789, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AccountNotNullTest - 872bb7f0-b17e-e6a8-eeeb-d3e982436ce9' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.533, 15717170625757, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.534, 15717170634350, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.534, 15717170635601, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.534, 15717170637319, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IdTest - 55ae7332-67e7-b37e-e0f5-c829d4e29935' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.536, 15717170651165, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.538, 15717170676712, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.539, 15717170678237, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.539, 15717170679988, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IdTest - 55ae7332-67e7-b37e-e0f5-c829d4e29935' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.540, 15717170689161, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.540, 15717170694620, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.540, 15717170695516, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.540, 15717170696768, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerTest - 2206a939-6e60-adce-eff6-8a5c27b7ecce' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.542, 15717170708025, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.542, 15717170713660, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.542, 15717170714539, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.542, 15717170715829, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerTest - 2206a939-6e60-adce-eff6-8a5c27b7ecce' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.543, 15717170722756, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.544, 15717170728089, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.544, 15717170728984, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.544, 15717170730138, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SumTest - 967f0fa2-e260-74ac-ba3f-08aea15da6f3' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.545, 15717170740549, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.545, 15717170746526, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.545, 15717170747253, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.546, 15717170748474, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SumTest - 967f0fa2-e260-74ac-ba3f-08aea15da6f3' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.546, 15717170755403, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.547, 15717170760642, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.547, 15717170761383, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.547, 15717170762501, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerNullValidTest - 03663278-01b6-2070-d78f-0e8e0637fb2f' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.548, 15717170772192, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.549, 15717170778497, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.549, 15717170779323, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.549, 15717170780577, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerNullValidTest - 03663278-01b6-2070-d78f-0e8e0637fb2f' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.549, 15717170787509, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.550, 15717170792036, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.550, 15717170792674, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.550, 15717170793769, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerLengthValidTest - 27d976f7-6ffb-b11a-f261-7a76d398fff8' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.551, 15717170806462, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.552, 15717170815352, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.552, 15717170816719, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.553, 15717170818361, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerLengthValidTest - 27d976f7-6ffb-b11a-f261-7a76d398fff8' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.554, 15717170828528, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.554, 15717170837019, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.555, 15717170838188, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.555, 15717170839680, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SumLowerValidTest - b3a9bf1d-d6b7-0169-943c-8a51e485dc3f' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.556, 15717170853568, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.557, 15717170862902, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.557, 15717170864263, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.557, 15717170865905, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SumLowerValidTest - b3a9bf1d-d6b7-0169-943c-8a51e485dc3f' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.561, 15717170907864, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.562, 15717170915260, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.562, 15717170916407, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.563, 15717170918085, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UserIdTest - a3d3431f-131f-0835-f4e5-bd0a8f426717' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.564, 15717170933108, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.569, 15717170985706, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.569, 15717170987548, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.570, 15717170989366, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UserIdTest - a3d3431f-131f-0835-f4e5-bd0a8f426717' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.573, 15717171018671, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.573, 15717171027638, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.574, 15717171028792, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.574, 15717171030404, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositNotNullTest - 86467082-fce1-8abc-fec6-0ee8b5b39c99' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.576, 15717171050486, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.577, 15717171063673, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.577, 15717171065204, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.577, 15717171067480, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositNotNullTest - 86467082-fce1-8abc-fec6-0ee8b5b39c99' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.579, 15717171079065, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.580, 15717171089328, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.580, 15717171090744, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.580, 15717171092623, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IdTest - 7dd9f604-89b1-2bbf-69d3-8b5d053a44a1' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.581, 15717171106955, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.582, 15717171114919, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.582, 15717171116244, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.583, 15717171118042, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IdTest - 7dd9f604-89b1-2bbf-69d3-8b5d053a44a1' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.584, 15717171128533, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.585, 15717171138488, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.585, 15717171139893, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.585, 15717171141736, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'NameTest - e3fc18c9-9e67-3c19-956a-150364b30174' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.586, 15717171155480, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.587, 15717171164191, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.587, 15717171165124, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.587, 15717171166577, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'NameTest - e3fc18c9-9e67-3c19-956a-150364b30174' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.588, 15717171176157, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.589, 15717171184104, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.589, 15717171185548, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.589, 15717171186974, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PeriodTest - f0760dbf-bd0d-c515-e603-3586c7c62098' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.591, 15717171201141, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.592, 15717171208380, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.592, 15717171209293, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.592, 15717171210941, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PeriodTest - f0760dbf-bd0d-c515-e603-3586c7c62098' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.593, 15717171222101, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.594, 15717171230632, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.594, 15717171231735, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.594, 15717171233420, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositSumTest - 425070b0-e053-fafb-65ff-dc77e4ed9947' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.596, 15717171248223, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.596, 15717171257137, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.597, 15717171259046, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.597, 15717171261294, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositSumTest - 425070b0-e053-fafb-65ff-dc77e4ed9947' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.598, 15717171271504, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.599, 15717171279180, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.599, 15717171280581, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.599, 15717171282198, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AccountIdTest - e840641d-02ff-c6c2-abe9-3cba544226d9' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.600, 15717171296253, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.601, 15717171306601, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.602, 15717171307985, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.602, 15717171309869, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AccountIdTest - e840641d-02ff-c6c2-abe9-3cba544226d9' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.603, 15717171320314, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.604, 15717171328718, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.604, 15717171329872, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.604, 15717171331436, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'NameNullValidTest - 2f88a1b2-8177-0254-7938-d84580d0453b' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.605, 15717171344397, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.606, 15717171352861, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.606, 15717171353976, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.606, 15717171355646, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'NameNullValidTest - 2f88a1b2-8177-0254-7938-d84580d0453b' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.607, 15717171365928, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.608, 15717171374673, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.608, 15717171375978, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.609, 15717171378003, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'NameLengthValidTest - 74cac40c-a593-de8c-1f7d-d9906f0f885c' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.610, 15717171391207, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.611, 15717171398471, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.611, 15717171399736, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.611, 15717171401453, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'NameLengthValidTest - 74cac40c-a593-de8c-1f7d-d9906f0f885c' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.612, 15717171411087, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.614, 15717171431587, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.614, 15717171433163, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.614, 15717171435072, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PeriodValidTest - bfb46c51-4d31-ba27-8fd9-81dc8b2a069a' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.615, 15717171447965, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.616, 15717171455634, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.616, 15717171456825, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.617, 15717171458493, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PeriodValidTest - bfb46c51-4d31-ba27-8fd9-81dc8b2a069a' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.619, 15717171486933, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.620, 15717171494879, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.620, 15717171496143, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.620, 15717171497875, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SumLowerValidTest - 82556829-0c6b-22d2-1878-1ca1ce553daf' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.622, 15717171511140, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.623, 15717171518792, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.623, 15717171520057, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.623, 15717171521808, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SumLowerValidTest - 82556829-0c6b-22d2-1878-1ca1ce553daf' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.624, 15717171531144, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.625, 15717171538308, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.625, 15717171539500, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.625, 15717171541226, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositNotNullTest - 8cbf8ab5-0317-02b9-d877-2e27deff577f' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.627, 15717171563340, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.628, 15717171573903, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.628, 15717171575051, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.628, 15717171576864, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositNotNullTest - 8cbf8ab5-0317-02b9-d877-2e27deff577f' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.629, 15717171586969, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.630, 15717171595091, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.630, 15717171596119, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.630, 15717171597786, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IdTest - 3d45af83-ce06-3004-1524-a3368a39a89a' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.632, 15717171612004, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.633, 15717171620634, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.633, 15717171621780, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.633, 15717171623606, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IdTest - 3d45af83-ce06-3004-1524-a3368a39a89a' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.634, 15717171633688, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.635, 15717171640948, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.635, 15717171642235, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.635, 15717171643846, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerTest - 01752dd5-4536-3dca-f5c3-15676d0e3a08' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.637, 15717171659562, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.637, 15717171667674, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.638, 15717171668972, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.638, 15717171670769, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerTest - 01752dd5-4536-3dca-f5c3-15676d0e3a08' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.639, 15717171682581, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.640, 15717171690971, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.640, 15717171692267, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.640, 15717171693827, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EmailTest - 80d2e011-6aa1-e2d9-da97-401d6a764258' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.642, 15717171708234, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.642, 15717171715705, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.642, 15717171717014, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.643, 15717171718988, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EmailTest - 80d2e011-6aa1-e2d9-da97-401d6a764258' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.644, 15717171728462, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.644, 15717171735718, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.644, 15717171737024, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.645, 15717171738576, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UsernameTest - 5ef4e575-3742-b127-5d99-4f03b7e1f928' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.646, 15717171752373, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.648, 15717171768065, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.648, 15717171769686, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.648, 15717171771429, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UsernameTest - 5ef4e575-3742-b127-5d99-4f03b7e1f928' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.649, 15717171780699, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.650, 15717171788201, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.650, 15717171789406, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.650, 15717171790949, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PasswordTest - 556b68fe-fdad-8eca-44f9-70b9561b9b43' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.651, 15717171805394, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.652, 15717171814778, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.652, 15717171815996, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.652, 15717171817768, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PasswordTest - 556b68fe-fdad-8eca-44f9-70b9561b9b43' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.653, 15717171826644, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.654, 15717171835630, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.654, 15717171836792, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.655, 15717171838411, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AdminTest - dc65a6f8-741f-c0ad-0bad-4d112a03a044' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.657, 15717171860451, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.658, 15717171869032, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.658, 15717171870514, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.658, 15717171872168, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AdminTest - dc65a6f8-741f-c0ad-0bad-4d112a03a044' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.659, 15717171881634, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.660, 15717171889033, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.660, 15717171890062, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.660, 15717171891542, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UserDataNullValidTest - 5c279ccd-9101-012a-4e21-c78ab1aed43e' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.661, 15717171905073, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.662, 15717171912570, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.662, 15717171913823, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.662, 15717171915411, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UserDataNullValidTest - 5c279ccd-9101-012a-4e21-c78ab1aed43e' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.665, 15717171941705, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.666, 15717171949437, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.666, 15717171950708, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.666, 15717171952350, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UserDataLengthValidTest - ed1d2cbd-cd9d-3031-948d-94f6e02c009a' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.668, 15717171970318, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.668, 15717171977568, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.669, 15717171978906, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.669, 15717171980725, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UserDataLengthValidTest - ed1d2cbd-cd9d-3031-948d-94f6e02c009a' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.670, 15717171991266, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.671, 15717171998565, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.671, 15717171999588, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.671, 15717172001342, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PasswordLenghtValidTest - 3ae886f0-c78d-0295-be86-ad75743ba037' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.672, 15717172014681, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.673, 15717172023906, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.673, 15717172025294, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.673, 15717172027269, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PasswordLenghtValidTest - 3ae886f0-c78d-0295-be86-ad75743ba037' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.675, 15717172039284, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.676, 15717172048893, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.676, 15717172050389, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.676, 15717172052904, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositNotNullTest - 567031d7-d235-26b6-933e-f6abf311c1b4' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.678, 15717172072896, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.680, 15717172095645, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.680, 15717172097380, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.681, 15717172099627, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositNotNullTest - 567031d7-d235-26b6-933e-f6abf311c1b4' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.682, 15717172110374, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.683, 15717172122950, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.683, 15717172124436, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.683, 15717172126223, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UsernameTest - d20ebc7b-0a90-0d05-66d6-98943f1effa6' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.691, 15717172200641, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.692, 15717172212749, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.692, 15717172214043, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.692, 15717172216114, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UsernameTest - d20ebc7b-0a90-0d05-66d6-98943f1effa6' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.693, 15717172226684, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.695, 15717172238115, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.695, 15717172239459, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.695, 15717172241500, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PasswordTest - caf4aa26-e06b-0ab4-68df-70712127e4e7' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.696, 15717172255865, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.697, 15717172264255, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.697, 15717172266321, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.698, 15717172269065, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PasswordTest - caf4aa26-e06b-0ab4-68df-70712127e4e7' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.699, 15717172280271, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.699, 15717172287800, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.700, 15717172288969, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.700, 15717172290686, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UserDataNullValidTest - 5a3b416c-e05e-dd2f-5e0a-d61bbffe5895' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.701, 15717172307323, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.702, 15717172314678, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.702, 15717172315851, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.702, 15717172317566, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UserDataNullValidTest - 5a3b416c-e05e-dd2f-5e0a-d61bbffe5895' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.704, 15717172329469, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.704, 15717172337681, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.705, 15717172338963, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.705, 15717172340794, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UserDataLengthValidTest - f0bc8622-dde4-fd75-7aed-392fa46c79eb' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.706, 15717172356442, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.707, 15717172364194, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.707, 15717172365612, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.707, 15717172367528, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UserDataLengthValidTest - f0bc8622-dde4-fd75-7aed-392fa46c79eb' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.709, 15717172378914, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.710, 15717172388204, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.710, 15717172389387, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.710, 15717172391210, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PasswordLenghtValidTest - b2060870-aa67-a0bd-6e8a-71ba7e49e533' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.711, 15717172405052, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.712, 15717172416686, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.713, 15717172418045, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.713, 15717172419928, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PasswordLenghtValidTest - b2060870-aa67-a0bd-6e8a-71ba7e49e533' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.714, 15717172430094, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.715, 15717172438331, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.715, 15717172439798, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.715, 15717172441657, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositNotNullTest - 76361ade-3fb6-f819-01a1-cdde749eb5ba' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.717, 15717172463086, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.718, 15717172474273, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.718, 15717172475734, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.718, 15717172477857, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositNotNullTest - 76361ade-3fb6-f819-01a1-cdde749eb5ba' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.721, 15717172507353, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.722, 15717172516056, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.722, 15717172517575, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.723, 15717172519644, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerTest - ac23e74c-8b2c-7296-a2e9-7b0d324d46d1' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.724, 15717172535924, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.726, 15717172550186, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.726, 15717172551630, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.726, 15717172553632, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerTest - ac23e74c-8b2c-7296-a2e9-7b0d324d46d1' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.727, 15717172564588, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.729, 15717172582945, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.729, 15717172584595, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.729, 15717172586368, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EmailTest - 96b62d73-f3da-0580-6386-5045afe7f788' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.731, 15717172602669, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.732, 15717172610959, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.732, 15717172612273, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.732, 15717172614071, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EmailTest - 96b62d73-f3da-0580-6386-5045afe7f788' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.733, 15717172624270, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.734, 15717172632363, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.734, 15717172633656, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.734, 15717172635342, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UsernameTest - 5f998591-3034-81f7-8da8-178643efc542' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.736, 15717172649253, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.736, 15717172657887, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.737, 15717172659011, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.737, 15717172660777, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UsernameTest - 5f998591-3034-81f7-8da8-178643efc542' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.738, 15717172671758, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.739, 15717172680708, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.739, 15717172681838, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.739, 15717172683430, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PasswordTest - 6d94b954-0af9-0279-c324-e82b3d4c9da3' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.741, 15717172698401, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.741, 15717172704688, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.741, 15717172705619, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.741, 15717172707042, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PasswordTest - 6d94b954-0af9-0279-c324-e82b3d4c9da3' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.743, 15717172720061, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.743, 15717172725220, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.743, 15717172726041, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.743, 15717172727202, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AdminTest - 475e7f6e-7b5a-1157-8316-6ffd44fb0c39' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.744, 15717172737713, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.745, 15717172742582, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.745, 15717172743317, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.745, 15717172744566, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AdminTest - 475e7f6e-7b5a-1157-8316-6ffd44fb0c39' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.746, 15717172751814, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.746, 15717172756449, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.746, 15717172757177, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.747, 15717172758323, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UserDataNullValidTest - 0c6540ba-2f87-98f9-63d6-7ab28ea759a8' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.748, 15717172769462, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.748, 15717172774391, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.748, 15717172775110, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.748, 15717172776413, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UserDataNullValidTest - 0c6540ba-2f87-98f9-63d6-7ab28ea759a8' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.749, 15717172783401, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.750, 15717172788622, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.750, 15717172789510, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.750, 15717172790952, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UserDataLengthValidTest - ba788621-21ba-d236-f7d4-f6ad8ad4bd48' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.751, 15717172804025, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.752, 15717172812149, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.752, 15717172813424, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.752, 15717172815220, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UserDataLengthValidTest - ba788621-21ba-d236-f7d4-f6ad8ad4bd48' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.753, 15717172825721, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.754, 15717172832821, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.754, 15717172834043, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.754, 15717172835672, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PasswordLenghtValidTest - fcca74ce-ba68-4ca1-f8d6-aa69b74da7f6' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.756, 15717172849055, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.757, 15717172864369, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.757, 15717172865920, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.757, 15717172867709, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PasswordLenghtValidTest - fcca74ce-ba68-4ca1-f8d6-aa69b74da7f6' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.759, 15717172879190, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.759, 15717172886553, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.759, 15717172887845, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.760, 15717172889663, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositNotNullTest - beb63bae-4764-9415-be25-27350f485e50' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.762, 15717172911908, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.763, 15717172920223, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.763, 15717172921472, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.763, 15717172923274, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositNotNullTest - beb63bae-4764-9415-be25-27350f485e50' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.766, 15717172949451, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.767, 15717172957996, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.767, 15717172959321, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.767, 15717172961056, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IdTest - cdf5463e-351e-623e-2350-cbfbdde71d18' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.768, 15717172976104, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.769, 15717172983253, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.769, 15717172984518, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.769, 15717172986511, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IdTest - cdf5463e-351e-623e-2350-cbfbdde71d18' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.770, 15717172996279, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.771, 15717173005020, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.771, 15717173006316, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.772, 15717173008153, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerTest - 99d46f7a-67e4-eaa0-6661-34558126e3ba' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.773, 15717173020420, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.773, 15717173027188, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.774, 15717173028173, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.774, 15717173029929, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerTest - 99d46f7a-67e4-eaa0-6661-34558126e3ba' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.774, 15717173037012, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.775, 15717173043702, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.775, 15717173044805, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.775, 15717173046200, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EmailTest - 5e185452-bafa-2ab3-723d-a000d1d95643' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.776, 15717173056731, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.777, 15717173064002, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.777, 15717173065079, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.777, 15717173066721, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EmailTest - 5e185452-bafa-2ab3-723d-a000d1d95643' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.778, 15717173077919, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.779, 15717173084906, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.779, 15717173086195, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.780, 15717173088031, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UsernameTest - ce7e7281-7765-1627-cb46-39b2fd427bd5' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.781, 15717173102816, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.782, 15717173110208, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.782, 15717173111594, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.782, 15717173113460, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UsernameTest - ce7e7281-7765-1627-cb46-39b2fd427bd5' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.783, 15717173122899, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.784, 15717173130075, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.784, 15717173131552, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.784, 15717173133323, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PasswordTest - 92ad8281-c9ac-d67f-86b5-1c026e14752b' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.785, 15717173147407, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.787, 15717173165284, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.787, 15717173167097, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.788, 15717173169100, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PasswordTest - 92ad8281-c9ac-d67f-86b5-1c026e14752b' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.789, 15717173186023, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.790, 15717173194699, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.790, 15717173196293, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.791, 15717173197994, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AdminTest - b196aca0-d3c0-44c4-e606-a6ce1716d50e' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.792, 15717173212912, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.793, 15717173220423, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.793, 15717173221902, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.793, 15717173223909, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AdminTest - b196aca0-d3c0-44c4-e606-a6ce1716d50e' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.794, 15717173234504, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.795, 15717173242134, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.795, 15717173243567, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.795, 15717173245417, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositNotNullTest - bfe40dbe-f1b9-f74f-00e1-2313ef807d64' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.797, 15717173266283, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.798, 15717173275238, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.798, 15717173276688, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.799, 15717173278714, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DepositNotNullTest - bfe40dbe-f1b9-f74f-00e1-2313ef807d64' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.800, 15717173288617, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.800, 15717173296085, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.800, 15717173297604, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.801, 15717173299498, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IdTest - 7b03b37b-36ad-8744-2ad3-f3e53986b299' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.802, 15717173313721, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.803, 15717173321320, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.803, 15717173322742, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.803, 15717173324975, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IdTest - 7b03b37b-36ad-8744-2ad3-f3e53986b299' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.804, 15717173335296, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.805, 15717173342798, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.805, 15717173344265, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.805, 15717173346266, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerTest - dd24c057-ca3c-003b-f193-6c071407267f' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.807, 15717173361775, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.808, 15717173369235, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.808, 15717173370756, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.808, 15717173373000, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'OwnerTest - dd24c057-ca3c-003b-f193-6c071407267f' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.811, 15717173398992, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.811, 15717173406629, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.812, 15717173408106, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.812, 15717173409989, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EmailTest - 9db54799-fce6-9f06-734f-90c7187e0884' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.813, 15717173424547, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.814, 15717173432892, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.814, 15717173434171, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.814, 15717173436028, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EmailTest - 9db54799-fce6-9f06-734f-90c7187e0884' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.815, 15717173446386, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.816, 15717173453575, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.816, 15717173454986, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.816, 15717173456860, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UsernameTest - 9dba0292-2b63-9a67-0d6e-6b13157c4b46' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.818, 15717173471450, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.819, 15717173479492, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.819, 15717173480947, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.819, 15717173483029, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'UsernameTest - 9dba0292-2b63-9a67-0d6e-6b13157c4b46' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.820, 15717173492831, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.821, 15717173500339, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.821, 15717173501793, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.821, 15717173503612, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PasswordTest - fe533dec-a419-c1bc-dd83-d62dd1bea254' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.822, 15717173517653, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.823, 15717173525102, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.823, 15717173526488, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.824, 15717173528366, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'PasswordTest - fe533dec-a419-c1bc-dd83-d62dd1bea254' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.825, 15717173538396, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.825, 15717173545715, datacollector.dll, BlameCollector.EventsTestCaseStart: Test Case Start
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.825, 15717173547130, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseStart: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.826, 15717173548926, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AdminTest - 3be3e27f-ca83-e5eb-8c97-1689a92e34ad' started.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.827, 15717173563429, datacollector.dll, DataCollectionTestCaseEventHandler: Test case completing.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.829, 15717173581949, datacollector.dll, BlameCollector.EventsTestCaseEnd: Test Case End
+TpTrace Verbose: 0 : 29016, 6, 2023/02/16, 21:55:07.829, 15717173583804, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.TestCaseEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.829, 15717173585880, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AdminTest - 3be3e27f-ca83-e5eb-8c97-1689a92e34ad' completed
+TpTrace Information: 0 : 29016, 6, 2023/02/16, 21:55:07.838, 15717173675776, datacollector.dll, DataCollectionTestCaseEventHandler: Test session ended
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:07.909, 15717174378721, datacollector.dll, DataCollectionRequestHandler.ProcessRequests: Datacollector received message: (DataCollection.AfterTestRunEnd) -> {"MessageType":"DataCollection.AfterTestRunEnd","Payload":false}
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:07.910, 15717174393200, datacollector.dll, Blame Collector: Session End
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:07.910, 15717174394368, datacollector.dll, BlameCollector.CollectDumpAndAbortTesthost: Custom path to dump directory was provided via VSTEST_DUMP_PATH. Skipping attachment upload, the caller is responsible for collecting and uploading the dumps themselves.
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:07.910, 15717174395807, datacollector.dll, MulticastDelegateUtilities.SafeInvoke: DataCollectionEvents.SessionEnd: Invoking callback 1/1 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector., took 0 ms.
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:07.912, 15717174408534, datacollector.dll, DataCollectionManager.CleanupPlugins: CleanupPlugins called
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:07.912, 15717174409769, datacollector.dll, DataCollectionManager.CleanupPlugins: Cleaning up 1 plugins
+TpTrace Verbose: 0 : 29016, 1, 2023/02/16, 21:55:07.912, 15717174412571, datacollector.dll, dataCollectorInfo.DisposeDataCollector: calling Dispose() on Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:07.912, 15717174413812, datacollector.dll, DataCollectionManager.CleanupPlugins: CleanupPlugins finished
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:07.921, 15717174502101, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : Session End message received from server. Closing the connection.
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:07.921, 15717174505778, datacollector.dll, Closing the connection !
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:07.921, 15717174506806, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : DataCollection completed
+TpTrace Information: 0 : 29016, 1, 2023/02/16, 21:55:07.921, 15717174507423, datacollector.dll, Program.Main: exiting datacollector process.

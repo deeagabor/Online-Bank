@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Edit Account</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <script
+      src="https://kit.fontawesome.com/dbed6b6114.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="CSS/add-account.css" />
+
+  </head>
+
+  <body>
+    <div class="parent">
+        <div class="child-1">
+            <h3>Edit Account</h3>
+        </div>
+
+        <div class="child-2">
+            <form id="form" class="form">
+
+                    <select name="username" id="username-input"></select>
+
+                    <div class="input-field">
+                        <i class="fa fa-user"></i>
+                        <input id="firstname-input" name="firstname" type="text" autocomplete="off" placeholder="First Name">
+                    </div>
+
+                    <div class="input-field">
+                      <i class="fa fa-user"></i>
+                      <input id="lastname-input" name="lastname" type="text" autocomplete="off" placeholder="Last Name">
+                  </div>
+
+                    <div class="input-field">
+                        <i class="fa fa-euro"></i>
+                        <input id="sum-input" name="sum" type="text" autocomplete="off" placeholder="Account Amount">
+                    </div>
+
+                    <div id="error" class="error"></div>
+                    <div class="submit">
+                        <button type="submit" id = "button" class="button-add">SAVE</button>
+                    </div>
+            </form>                    
+        </div>
+    </div>
+  
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="JS/edit-account.js"></script>
+  </body>
+</html>

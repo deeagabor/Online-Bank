@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Deposits</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <script
+      src="https://kit.fontawesome.com/dbed6b6114.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/deposits.css" />
+
+  </head>
+
+  <body>
+
+    <div class="parent">
+        <div class="child-1">
+            <h3 class="title">Deposits</h3>
+            <p id="no-data" class="no-data"></p>
+            <button id="button-add" class="button-add" onclick="addButton()">Add Deposit<i class="fa fa-plus"></i></button>
+        </div>
+        
+
+        <div class="child-2">
+            <form id="filter" class="filter">
+                    <div class="input-field">
+                        <input id="option-1-months" type="radio" name="period"> 1 month
+                    </div>
+
+                    <div class="input-field">
+                        <input id="option-6-months" type="radio" name="period"> 6 months
+                    </div>
+
+                    <div class="input-field">
+                        <input id="option-12-months" type="radio" name="period"> 12 months
+                    </div>
+
+                    <div class="refresh">
+                        <span id="refresh"> <i class="fa fa-refresh"></i> Refresh</span>
+                    </div>
+
+                    <div class="save">
+                        <button id="button-save" class="button-save">SAVE</button>
+                    </div>
+            </form>                    
+
+            <table class="deposits-table table table-bordered">
+                <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Period (months)</th>
+                    <th>Amount (€)</th>
+                    <th>Options</th>
+                </tr>
+                </thead>
+                <tbody id="deposits-table">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="child-3">
+            <button id="logout" class="logout" onclick="logoutButton()">LOGOUT</button>
+        </div>
+    </div>
+           
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>    
+    <script src="JS/deposits-admin.js"></script>
+  </body>
+</html>
